@@ -1,0 +1,45 @@
+body {
+  /* Layout */
+  position: absolute; left: 0; top: 0; right: 0; min-height: 100%; margin: 0;
+  min-width: 640px;
+
+  /* Fonts */
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+pre {
+  position: fixed; bottom: 0;
+  background-color: rgba(255,255,255,0.8);
+  pointer-events: none;
+  font-size: 14px;
+  padding: 1em;
+  margin: 0;
+}
+
+figcaption, figure {
+  margin: 1em 0;
+}
+
+.box {
+  position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -moz-box-orient: vertical;
+
+  display: box;
+  box-pack: center;
+  box-align: center;
+  box-orient: vertical;
+}
+
+#c {
+  vertical-align: middle;
+}
