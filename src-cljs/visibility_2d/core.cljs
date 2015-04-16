@@ -65,9 +65,9 @@
         number-of-samples 51
         samples (atom ())]
     (fn [event]
-      (let [before (.getTime (js/Date.))
+      (let [before (.now js/Date)
             result (f event)
-            dt (- (.getTime (js/Date.)) before)
+            dt (- (.now js/Date) before)
             values (swap! samples #(take number-of-samples (cons dt %)))]
         (dom/setTextContent html-element
                             (str

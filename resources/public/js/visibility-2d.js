@@ -2024,7 +2024,7 @@ if (typeof cljs.core._STAR_loaded_libs_STAR_ !== "undefined") {
   cljs.core._STAR_loaded_libs_STAR_ = null;
 }
 cljs.core.pr_opts = function cljs$core$pr_opts() {
-  return new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null, "flush-on-newline", "flush-on-newline", -151457939), cljs.core._STAR_flush_on_newline_STAR_, new cljs.core.Keyword(null, "readably", "readably", 1129599760), cljs.core._STAR_print_readably_STAR_, new cljs.core.Keyword(null, "meta", "meta", 1499536964), cljs.core._STAR_print_meta_STAR_, new cljs.core.Keyword(null, "dup", "dup", 556298533), cljs.core._STAR_print_dup_STAR_, new cljs.core.Keyword(null, "print-length", "print-length", 
+  return new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null, "flush-on-newline", "flush-on-newline", -151457939), cljs.core._STAR_flush_on_newline_STAR_, new cljs.core.Keyword(null, "readably", "readably", 1129599760), cljs.core._STAR_print_readably_STAR_, new cljs.core.Keyword(null, "meta", "meta", 1499536964), cljs.core._STAR_print_meta_STAR_, new cljs.core.Keyword(null, "dup", "dup", 556298533), cljs.core._STAR_print_dup_STAR_, new cljs.core.Keyword(null, "print-length", "print-length",
   1931866356), cljs.core._STAR_print_length_STAR_], null);
 };
 cljs.core.enable_console_print_BANG_ = function cljs$core$enable_console_print_BANG_() {
@@ -5832,7 +5832,7 @@ cljs.core.Var.prototype.call = function() {
     var G__7073 = s;
     var G__7074 = t;
     var G__7075 = rest;
-    return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7054, G__7055, G__7056, G__7057, G__7058, G__7059, G__7060, G__7061, G__7062, G__7063, G__7064, G__7065, G__7066, G__7067, G__7068, G__7069, G__7070, G__7071, G__7072, G__7073, G__7074, G__7075) : cljs.core.apply.call(null, G__7054, G__7055, G__7056, G__7057, G__7058, G__7059, G__7060, G__7061, G__7062, G__7063, G__7064, G__7065, G__7066, G__7067, G__7068, G__7069, G__7070, G__7071, G__7072, 
+    return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7054, G__7055, G__7056, G__7057, G__7058, G__7059, G__7060, G__7061, G__7062, G__7063, G__7064, G__7065, G__7066, G__7067, G__7068, G__7069, G__7070, G__7071, G__7072, G__7073, G__7074, G__7075) : cljs.core.apply.call(null, G__7054, G__7055, G__7056, G__7057, G__7058, G__7059, G__7060, G__7061, G__7062, G__7063, G__7064, G__7065, G__7066, G__7067, G__7068, G__7069, G__7070, G__7071, G__7072,
     G__7073, G__7074, G__7075);
   };
   G__7098 = function(self__, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, rest) {
@@ -6087,7 +6087,7 @@ cljs.core.Var.prototype.cljs$core$IFn$_invoke$arity$21 = function(a, b, c, d, e,
   var G__7095 = s;
   var G__7096 = t;
   var G__7097 = rest;
-  return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7076, G__7077, G__7078, G__7079, G__7080, G__7081, G__7082, G__7083, G__7084, G__7085, G__7086, G__7087, G__7088, G__7089, G__7090, G__7091, G__7092, G__7093, G__7094, G__7095, G__7096, G__7097) : cljs.core.apply.call(null, G__7076, G__7077, G__7078, G__7079, G__7080, G__7081, G__7082, G__7083, G__7084, G__7085, G__7086, G__7087, G__7088, G__7089, G__7090, G__7091, G__7092, G__7093, G__7094, 
+  return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7076, G__7077, G__7078, G__7079, G__7080, G__7081, G__7082, G__7083, G__7084, G__7085, G__7086, G__7087, G__7088, G__7089, G__7090, G__7091, G__7092, G__7093, G__7094, G__7095, G__7096, G__7097) : cljs.core.apply.call(null, G__7076, G__7077, G__7078, G__7079, G__7080, G__7081, G__7082, G__7083, G__7084, G__7085, G__7086, G__7087, G__7088, G__7089, G__7090, G__7091, G__7092, G__7093, G__7094,
   G__7095, G__7096, G__7097);
 };
 cljs.core.Var.prototype.cljs$core$Fn$ = true;
@@ -8058,7 +8058,7 @@ cljs.core.MetaFn.prototype.call = function() {
     var G__7479 = s;
     var G__7480 = t;
     var G__7481 = rest;
-    return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7460, G__7461, G__7462, G__7463, G__7464, G__7465, G__7466, G__7467, G__7468, G__7469, G__7470, G__7471, G__7472, G__7473, G__7474, G__7475, G__7476, G__7477, G__7478, G__7479, G__7480, G__7481) : cljs.core.apply.call(null, G__7460, G__7461, G__7462, G__7463, G__7464, G__7465, G__7466, G__7467, G__7468, G__7469, G__7470, G__7471, G__7472, G__7473, G__7474, G__7475, G__7476, G__7477, G__7478, 
+    return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7460, G__7461, G__7462, G__7463, G__7464, G__7465, G__7466, G__7467, G__7468, G__7469, G__7470, G__7471, G__7472, G__7473, G__7474, G__7475, G__7476, G__7477, G__7478, G__7479, G__7480, G__7481) : cljs.core.apply.call(null, G__7460, G__7461, G__7462, G__7463, G__7464, G__7465, G__7466, G__7467, G__7468, G__7469, G__7470, G__7471, G__7472, G__7473, G__7474, G__7475, G__7476, G__7477, G__7478,
     G__7479, G__7480, G__7481);
   };
   G__7714 = function(self__, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, rest) {
@@ -8479,7 +8479,7 @@ cljs.core.MetaFn.prototype.cljs$core$IFn$_invoke$arity$21 = function(a, b, c, d,
   var G__7711 = s;
   var G__7712 = t;
   var G__7713 = rest;
-  return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7692, G__7693, G__7694, G__7695, G__7696, G__7697, G__7698, G__7699, G__7700, G__7701, G__7702, G__7703, G__7704, G__7705, G__7706, G__7707, G__7708, G__7709, G__7710, G__7711, G__7712, G__7713) : cljs.core.apply.call(null, G__7692, G__7693, G__7694, G__7695, G__7696, G__7697, G__7698, G__7699, G__7700, G__7701, G__7702, G__7703, G__7704, G__7705, G__7706, G__7707, G__7708, G__7709, G__7710, 
+  return cljs.core.apply.cljs$core$IFn$_invoke$arity$22 ? cljs.core.apply.cljs$core$IFn$_invoke$arity$22(G__7692, G__7693, G__7694, G__7695, G__7696, G__7697, G__7698, G__7699, G__7700, G__7701, G__7702, G__7703, G__7704, G__7705, G__7706, G__7707, G__7708, G__7709, G__7710, G__7711, G__7712, G__7713) : cljs.core.apply.call(null, G__7692, G__7693, G__7694, G__7695, G__7696, G__7697, G__7698, G__7699, G__7700, G__7701, G__7702, G__7703, G__7704, G__7705, G__7706, G__7707, G__7708, G__7709, G__7710,
   G__7711, G__7712, G__7713);
 };
 cljs.core.MetaFn.prototype.cljs$core$Fn$ = true;
@@ -28478,7 +28478,7 @@ cljs.core.derive.cljs$core$IFn$_invoke$arity$3 = function(h, tag, parent) {
       throw new Error([cljs.core.str("Cyclic derivation:"), cljs.core.str(parent), cljs.core.str("has"), cljs.core.str(tag), cljs.core.str("as ancestor")].join(""));
     } else {
     }
-    return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "parents", "parents", -2027538891), cljs.core.assoc.cljs$core$IFn$_invoke$arity$3((new cljs.core.Keyword(null, "parents", "parents", -2027538891)).cljs$core$IFn$_invoke$arity$1(h), tag, cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.get.cljs$core$IFn$_invoke$arity$3(tp, tag, cljs.core.PersistentHashSet.EMPTY), parent)), new cljs.core.Keyword(null, "ancestors", "ancestors", -776045424), tf((new cljs.core.Keyword(null, 
+    return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "parents", "parents", -2027538891), cljs.core.assoc.cljs$core$IFn$_invoke$arity$3((new cljs.core.Keyword(null, "parents", "parents", -2027538891)).cljs$core$IFn$_invoke$arity$1(h), tag, cljs.core.conj.cljs$core$IFn$_invoke$arity$2(cljs.core.get.cljs$core$IFn$_invoke$arity$3(tp, tag, cljs.core.PersistentHashSet.EMPTY), parent)), new cljs.core.Keyword(null, "ancestors", "ancestors", -776045424), tf((new cljs.core.Keyword(null,
     "ancestors", "ancestors", -776045424)).cljs$core$IFn$_invoke$arity$1(h), tag, td, parent, ta), new cljs.core.Keyword(null, "descendants", "descendants", 1824886031), tf((new cljs.core.Keyword(null, "descendants", "descendants", 1824886031)).cljs$core$IFn$_invoke$arity$1(h), parent, ta, tag, td)], null);
   }();
   if (cljs.core.truth_(or__4274__auto__)) {
@@ -29707,7 +29707,7 @@ cljs.core.MultiFn.prototype.call = function() {
       var G__11355 = q;
       var G__11356 = r;
       var G__11357 = s;
-      return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19(G__11339, G__11340, G__11341, G__11342, G__11343, G__11344, G__11345, G__11346, G__11347, G__11348, G__11349, G__11350, G__11351, G__11352, G__11353, G__11354, G__11355, G__11356, G__11357) : self__.dispatch_fn.call(null, G__11339, G__11340, G__11341, G__11342, G__11343, G__11344, G__11345, G__11346, G__11347, G__11348, G__11349, G__11350, G__11351, G__11352, G__11353, G__11354, G__11355, 
+      return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19(G__11339, G__11340, G__11341, G__11342, G__11343, G__11344, G__11345, G__11346, G__11347, G__11348, G__11349, G__11350, G__11351, G__11352, G__11353, G__11354, G__11355, G__11356, G__11357) : self__.dispatch_fn.call(null, G__11339, G__11340, G__11341, G__11342, G__11343, G__11344, G__11345, G__11346, G__11347, G__11348, G__11349, G__11350, G__11351, G__11352, G__11353, G__11354, G__11355,
       G__11356, G__11357);
     }();
     var target_fn = mf.cljs$core$IMultiFn$_get_method$arity$2(null, dispatch_val);
@@ -29761,7 +29761,7 @@ cljs.core.MultiFn.prototype.call = function() {
       var G__11394 = r;
       var G__11395 = s;
       var G__11396 = t;
-      return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20(G__11377, G__11378, G__11379, G__11380, G__11381, G__11382, G__11383, G__11384, G__11385, G__11386, G__11387, G__11388, G__11389, G__11390, G__11391, G__11392, G__11393, G__11394, G__11395, G__11396) : self__.dispatch_fn.call(null, G__11377, G__11378, G__11379, G__11380, G__11381, G__11382, G__11383, G__11384, G__11385, G__11386, G__11387, G__11388, G__11389, G__11390, G__11391, G__11392, 
+      return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20(G__11377, G__11378, G__11379, G__11380, G__11381, G__11382, G__11383, G__11384, G__11385, G__11386, G__11387, G__11388, G__11389, G__11390, G__11391, G__11392, G__11393, G__11394, G__11395, G__11396) : self__.dispatch_fn.call(null, G__11377, G__11378, G__11379, G__11380, G__11381, G__11382, G__11383, G__11384, G__11385, G__11386, G__11387, G__11388, G__11389, G__11390, G__11391, G__11392,
       G__11393, G__11394, G__11395, G__11396);
     }();
     var target_fn = mf.cljs$core$IMultiFn$_get_method$arity$2(null, dispatch_val);
@@ -29789,7 +29789,7 @@ cljs.core.MultiFn.prototype.call = function() {
     var G__11414 = r;
     var G__11415 = s;
     var G__11416 = t;
-    return target_fn.cljs$core$IFn$_invoke$arity$20 ? target_fn.cljs$core$IFn$_invoke$arity$20(G__11397, G__11398, G__11399, G__11400, G__11401, G__11402, G__11403, G__11404, G__11405, G__11406, G__11407, G__11408, G__11409, G__11410, G__11411, G__11412, G__11413, G__11414, G__11415, G__11416) : target_fn.call(null, G__11397, G__11398, G__11399, G__11400, G__11401, G__11402, G__11403, G__11404, G__11405, G__11406, G__11407, G__11408, G__11409, G__11410, G__11411, G__11412, G__11413, G__11414, G__11415, 
+    return target_fn.cljs$core$IFn$_invoke$arity$20 ? target_fn.cljs$core$IFn$_invoke$arity$20(G__11397, G__11398, G__11399, G__11400, G__11401, G__11402, G__11403, G__11404, G__11405, G__11406, G__11407, G__11408, G__11409, G__11410, G__11411, G__11412, G__11413, G__11414, G__11415, G__11416) : target_fn.call(null, G__11397, G__11398, G__11399, G__11400, G__11401, G__11402, G__11403, G__11404, G__11405, G__11406, G__11407, G__11408, G__11409, G__11410, G__11411, G__11412, G__11413, G__11414, G__11415,
     G__11416);
   };
   var G__11837__22 = function(self__, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, rest) {
@@ -30494,7 +30494,7 @@ cljs.core.MultiFn.prototype.cljs$core$IFn$_invoke$arity$19 = function(a, b, c, d
     var G__11775 = q;
     var G__11776 = r;
     var G__11777 = s;
-    return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19(G__11759, G__11760, G__11761, G__11762, G__11763, G__11764, G__11765, G__11766, G__11767, G__11768, G__11769, G__11770, G__11771, G__11772, G__11773, G__11774, G__11775, G__11776, G__11777) : self__.dispatch_fn.call(null, G__11759, G__11760, G__11761, G__11762, G__11763, G__11764, G__11765, G__11766, G__11767, G__11768, G__11769, G__11770, G__11771, G__11772, G__11773, G__11774, G__11775, 
+    return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$19(G__11759, G__11760, G__11761, G__11762, G__11763, G__11764, G__11765, G__11766, G__11767, G__11768, G__11769, G__11770, G__11771, G__11772, G__11773, G__11774, G__11775, G__11776, G__11777) : self__.dispatch_fn.call(null, G__11759, G__11760, G__11761, G__11762, G__11763, G__11764, G__11765, G__11766, G__11767, G__11768, G__11769, G__11770, G__11771, G__11772, G__11773, G__11774, G__11775,
     G__11776, G__11777);
   }();
   var target_fn = mf.cljs$core$IMultiFn$_get_method$arity$2(null, dispatch_val);
@@ -30547,7 +30547,7 @@ cljs.core.MultiFn.prototype.cljs$core$IFn$_invoke$arity$20 = function(a, b, c, d
     var G__11814 = r;
     var G__11815 = s;
     var G__11816 = t;
-    return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20(G__11797, G__11798, G__11799, G__11800, G__11801, G__11802, G__11803, G__11804, G__11805, G__11806, G__11807, G__11808, G__11809, G__11810, G__11811, G__11812, G__11813, G__11814, G__11815, G__11816) : self__.dispatch_fn.call(null, G__11797, G__11798, G__11799, G__11800, G__11801, G__11802, G__11803, G__11804, G__11805, G__11806, G__11807, G__11808, G__11809, G__11810, G__11811, G__11812, 
+    return self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20 ? self__.dispatch_fn.cljs$core$IFn$_invoke$arity$20(G__11797, G__11798, G__11799, G__11800, G__11801, G__11802, G__11803, G__11804, G__11805, G__11806, G__11807, G__11808, G__11809, G__11810, G__11811, G__11812, G__11813, G__11814, G__11815, G__11816) : self__.dispatch_fn.call(null, G__11797, G__11798, G__11799, G__11800, G__11801, G__11802, G__11803, G__11804, G__11805, G__11806, G__11807, G__11808, G__11809, G__11810, G__11811, G__11812,
     G__11813, G__11814, G__11815, G__11816);
   }();
   var target_fn = mf.cljs$core$IMultiFn$_get_method$arity$2(null, dispatch_val);
@@ -30575,7 +30575,7 @@ cljs.core.MultiFn.prototype.cljs$core$IFn$_invoke$arity$20 = function(a, b, c, d
   var G__11834 = r;
   var G__11835 = s;
   var G__11836 = t;
-  return target_fn.cljs$core$IFn$_invoke$arity$20 ? target_fn.cljs$core$IFn$_invoke$arity$20(G__11817, G__11818, G__11819, G__11820, G__11821, G__11822, G__11823, G__11824, G__11825, G__11826, G__11827, G__11828, G__11829, G__11830, G__11831, G__11832, G__11833, G__11834, G__11835, G__11836) : target_fn.call(null, G__11817, G__11818, G__11819, G__11820, G__11821, G__11822, G__11823, G__11824, G__11825, G__11826, G__11827, G__11828, G__11829, G__11830, G__11831, G__11832, G__11833, G__11834, G__11835, 
+  return target_fn.cljs$core$IFn$_invoke$arity$20 ? target_fn.cljs$core$IFn$_invoke$arity$20(G__11817, G__11818, G__11819, G__11820, G__11821, G__11822, G__11823, G__11824, G__11825, G__11826, G__11827, G__11828, G__11829, G__11830, G__11831, G__11832, G__11833, G__11834, G__11835, G__11836) : target_fn.call(null, G__11817, G__11818, G__11819, G__11820, G__11821, G__11822, G__11823, G__11824, G__11825, G__11826, G__11827, G__11828, G__11829, G__11830, G__11831, G__11832, G__11833, G__11834, G__11835,
   G__11836);
 };
 cljs.core.MultiFn.prototype.cljs$core$IFn$_invoke$arity$21 = function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, rest) {
@@ -30770,8 +30770,8 @@ cljs.core.comparator = function cljs$core$comparator(pred) {
   };
 };
 cljs.core.special_symbol_QMARK_ = function cljs$core$special_symbol_QMARK_(x) {
-  return cljs.core.contains_QMARK_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 19, [new cljs.core.Symbol(null, "\x26", "\x26", -2144855648, null), null, new cljs.core.Symbol(null, "defrecord*", "defrecord*", -1936366207, null), null, new cljs.core.Symbol(null, "try", "try", -1273693247, null), null, new cljs.core.Symbol(null, "loop*", "loop*", 615029416, null), null, new cljs.core.Symbol(null, "do", "do", 1686842252, null), null, new cljs.core.Symbol(null, "letfn*", 
-  "letfn*", -110097810, null), null, new cljs.core.Symbol(null, "if", "if", 1181717262, null), null, new cljs.core.Symbol(null, "new", "new", -444906321, null), null, new cljs.core.Symbol(null, "ns", "ns", 2082130287, null), null, new cljs.core.Symbol(null, "deftype*", "deftype*", 962659890, null), null, new cljs.core.Symbol(null, "let*", "let*", 1920721458, null), null, new cljs.core.Symbol(null, "js*", "js*", -1134233646, null), null, new cljs.core.Symbol(null, "fn*", "fn*", -752876845, null), 
+  return cljs.core.contains_QMARK_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 19, [new cljs.core.Symbol(null, "\x26", "\x26", -2144855648, null), null, new cljs.core.Symbol(null, "defrecord*", "defrecord*", -1936366207, null), null, new cljs.core.Symbol(null, "try", "try", -1273693247, null), null, new cljs.core.Symbol(null, "loop*", "loop*", 615029416, null), null, new cljs.core.Symbol(null, "do", "do", 1686842252, null), null, new cljs.core.Symbol(null, "letfn*",
+  "letfn*", -110097810, null), null, new cljs.core.Symbol(null, "if", "if", 1181717262, null), null, new cljs.core.Symbol(null, "new", "new", -444906321, null), null, new cljs.core.Symbol(null, "ns", "ns", 2082130287, null), null, new cljs.core.Symbol(null, "deftype*", "deftype*", 962659890, null), null, new cljs.core.Symbol(null, "let*", "let*", 1920721458, null), null, new cljs.core.Symbol(null, "js*", "js*", -1134233646, null), null, new cljs.core.Symbol(null, "fn*", "fn*", -752876845, null),
   null, new cljs.core.Symbol(null, "recur", "recur", 1202958259, null), null, new cljs.core.Symbol(null, "set!", "set!", 250714521, null), null, new cljs.core.Symbol(null, ".", ".", 1975675962, null), null, new cljs.core.Symbol(null, "quote", "quote", 1377916282, null), null, new cljs.core.Symbol(null, "throw", "throw", 595905694, null), null, new cljs.core.Symbol(null, "def", "def", 597100991, null), null], null), null), x);
 };
 cljs.core.test = function cljs$core$test(v) {
@@ -31129,7 +31129,7 @@ goog.userAgent.DOCUMENT_MODE = function() {
 }();
 goog.provide("goog.dom.BrowserFeature");
 goog.require("goog.userAgent");
-goog.dom.BrowserFeature = {CAN_ADD_NAME_OR_TYPE_ATTRIBUTES:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), CAN_USE_CHILDREN_ATTRIBUTE:!goog.userAgent.GECKO && !goog.userAgent.IE || goog.userAgent.IE && goog.userAgent.isDocumentModeOrHigher(9) || goog.userAgent.GECKO && goog.userAgent.isVersionOrHigher("1.9.1"), CAN_USE_INNER_TEXT:goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), CAN_USE_PARENT_ELEMENT_PROPERTY:goog.userAgent.IE || goog.userAgent.OPERA || goog.userAgent.WEBKIT, 
+goog.dom.BrowserFeature = {CAN_ADD_NAME_OR_TYPE_ATTRIBUTES:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), CAN_USE_CHILDREN_ATTRIBUTE:!goog.userAgent.GECKO && !goog.userAgent.IE || goog.userAgent.IE && goog.userAgent.isDocumentModeOrHigher(9) || goog.userAgent.GECKO && goog.userAgent.isVersionOrHigher("1.9.1"), CAN_USE_INNER_TEXT:goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), CAN_USE_PARENT_ELEMENT_PROPERTY:goog.userAgent.IE || goog.userAgent.OPERA || goog.userAgent.WEBKIT,
 INNER_HTML_NEEDS_SCOPED_ELEMENT:goog.userAgent.IE, LEGACY_IE_RANGES:goog.userAgent.IE && !goog.userAgent.isDocumentModeOrHigher(9)};
 goog.provide("goog.math");
 goog.require("goog.array");
@@ -31312,8 +31312,8 @@ goog.debug.entryPointRegistry.unmonitorAllIfPossible = function(monitor) {
 };
 goog.provide("goog.events.BrowserFeature");
 goog.require("goog.userAgent");
-goog.events.BrowserFeature = {HAS_W3C_BUTTON:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), HAS_W3C_EVENT_SUPPORT:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), SET_KEY_CODE_TO_PREVENT_DEFAULT:goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), HAS_NAVIGATOR_ONLINE_PROPERTY:!goog.userAgent.WEBKIT || goog.userAgent.isVersionOrHigher("528"), HAS_HTML5_NETWORK_EVENT_SUPPORT:goog.userAgent.GECKO && goog.userAgent.isVersionOrHigher("1.9b") || goog.userAgent.IE && 
-goog.userAgent.isVersionOrHigher("8") || goog.userAgent.OPERA && goog.userAgent.isVersionOrHigher("9.5") || goog.userAgent.WEBKIT && goog.userAgent.isVersionOrHigher("528"), HTML5_NETWORK_EVENTS_FIRE_ON_BODY:goog.userAgent.GECKO && !goog.userAgent.isVersionOrHigher("8") || goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), TOUCH_ENABLED:"ontouchstart" in goog.global || !!(goog.global["document"] && document.documentElement && "ontouchstart" in document.documentElement) || !!(goog.global["navigator"] && 
+goog.events.BrowserFeature = {HAS_W3C_BUTTON:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), HAS_W3C_EVENT_SUPPORT:!goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9), SET_KEY_CODE_TO_PREVENT_DEFAULT:goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), HAS_NAVIGATOR_ONLINE_PROPERTY:!goog.userAgent.WEBKIT || goog.userAgent.isVersionOrHigher("528"), HAS_HTML5_NETWORK_EVENT_SUPPORT:goog.userAgent.GECKO && goog.userAgent.isVersionOrHigher("1.9b") || goog.userAgent.IE &&
+goog.userAgent.isVersionOrHigher("8") || goog.userAgent.OPERA && goog.userAgent.isVersionOrHigher("9.5") || goog.userAgent.WEBKIT && goog.userAgent.isVersionOrHigher("528"), HTML5_NETWORK_EVENTS_FIRE_ON_BODY:goog.userAgent.GECKO && !goog.userAgent.isVersionOrHigher("8") || goog.userAgent.IE && !goog.userAgent.isVersionOrHigher("9"), TOUCH_ENABLED:"ontouchstart" in goog.global || !!(goog.global["document"] && document.documentElement && "ontouchstart" in document.documentElement) || !!(goog.global["navigator"] &&
 goog.global["navigator"]["msMaxTouchPoints"])};
 goog.provide("goog.disposable.IDisposable");
 goog.disposable.IDisposable = function() {
@@ -31447,12 +31447,12 @@ goog.require("goog.userAgent");
 goog.events.getVendorPrefixedName_ = function(eventName) {
   return goog.userAgent.WEBKIT ? "webkit" + eventName : goog.userAgent.OPERA ? "o" + eventName.toLowerCase() : eventName.toLowerCase();
 };
-goog.events.EventType = {CLICK:"click", RIGHTCLICK:"rightclick", DBLCLICK:"dblclick", MOUSEDOWN:"mousedown", MOUSEUP:"mouseup", MOUSEOVER:"mouseover", MOUSEOUT:"mouseout", MOUSEMOVE:"mousemove", MOUSEENTER:"mouseenter", MOUSELEAVE:"mouseleave", SELECTSTART:"selectstart", KEYPRESS:"keypress", KEYDOWN:"keydown", KEYUP:"keyup", BLUR:"blur", FOCUS:"focus", DEACTIVATE:"deactivate", FOCUSIN:goog.userAgent.IE ? "focusin" : "DOMFocusIn", FOCUSOUT:goog.userAgent.IE ? "focusout" : "DOMFocusOut", CHANGE:"change", 
-SELECT:"select", SUBMIT:"submit", INPUT:"input", PROPERTYCHANGE:"propertychange", DRAGSTART:"dragstart", DRAG:"drag", DRAGENTER:"dragenter", DRAGOVER:"dragover", DRAGLEAVE:"dragleave", DROP:"drop", DRAGEND:"dragend", TOUCHSTART:"touchstart", TOUCHMOVE:"touchmove", TOUCHEND:"touchend", TOUCHCANCEL:"touchcancel", BEFOREUNLOAD:"beforeunload", CONSOLEMESSAGE:"consolemessage", CONTEXTMENU:"contextmenu", DOMCONTENTLOADED:"DOMContentLoaded", ERROR:"error", HELP:"help", LOAD:"load", LOSECAPTURE:"losecapture", 
-ORIENTATIONCHANGE:"orientationchange", READYSTATECHANGE:"readystatechange", RESIZE:"resize", SCROLL:"scroll", UNLOAD:"unload", HASHCHANGE:"hashchange", PAGEHIDE:"pagehide", PAGESHOW:"pageshow", POPSTATE:"popstate", COPY:"copy", PASTE:"paste", CUT:"cut", BEFORECOPY:"beforecopy", BEFORECUT:"beforecut", BEFOREPASTE:"beforepaste", ONLINE:"online", OFFLINE:"offline", MESSAGE:"message", CONNECT:"connect", ANIMATIONSTART:goog.events.getVendorPrefixedName_("AnimationStart"), ANIMATIONEND:goog.events.getVendorPrefixedName_("AnimationEnd"), 
-ANIMATIONITERATION:goog.events.getVendorPrefixedName_("AnimationIteration"), TRANSITIONEND:goog.events.getVendorPrefixedName_("TransitionEnd"), POINTERDOWN:"pointerdown", POINTERUP:"pointerup", POINTERCANCEL:"pointercancel", POINTERMOVE:"pointermove", POINTEROVER:"pointerover", POINTEROUT:"pointerout", POINTERENTER:"pointerenter", POINTERLEAVE:"pointerleave", GOTPOINTERCAPTURE:"gotpointercapture", LOSTPOINTERCAPTURE:"lostpointercapture", MSGESTURECHANGE:"MSGestureChange", MSGESTUREEND:"MSGestureEnd", 
-MSGESTUREHOLD:"MSGestureHold", MSGESTURESTART:"MSGestureStart", MSGESTURETAP:"MSGestureTap", MSGOTPOINTERCAPTURE:"MSGotPointerCapture", MSINERTIASTART:"MSInertiaStart", MSLOSTPOINTERCAPTURE:"MSLostPointerCapture", MSPOINTERCANCEL:"MSPointerCancel", MSPOINTERDOWN:"MSPointerDown", MSPOINTERENTER:"MSPointerEnter", MSPOINTERHOVER:"MSPointerHover", MSPOINTERLEAVE:"MSPointerLeave", MSPOINTERMOVE:"MSPointerMove", MSPOINTEROUT:"MSPointerOut", MSPOINTEROVER:"MSPointerOver", MSPOINTERUP:"MSPointerUp", TEXTINPUT:"textinput", 
-COMPOSITIONSTART:"compositionstart", COMPOSITIONUPDATE:"compositionupdate", COMPOSITIONEND:"compositionend", EXIT:"exit", LOADABORT:"loadabort", LOADCOMMIT:"loadcommit", LOADREDIRECT:"loadredirect", LOADSTART:"loadstart", LOADSTOP:"loadstop", RESPONSIVE:"responsive", SIZECHANGED:"sizechanged", UNRESPONSIVE:"unresponsive", VISIBILITYCHANGE:"visibilitychange", STORAGE:"storage", DOMSUBTREEMODIFIED:"DOMSubtreeModified", DOMNODEINSERTED:"DOMNodeInserted", DOMNODEREMOVED:"DOMNodeRemoved", DOMNODEREMOVEDFROMDOCUMENT:"DOMNodeRemovedFromDocument", 
+goog.events.EventType = {CLICK:"click", RIGHTCLICK:"rightclick", DBLCLICK:"dblclick", MOUSEDOWN:"mousedown", MOUSEUP:"mouseup", MOUSEOVER:"mouseover", MOUSEOUT:"mouseout", MOUSEMOVE:"mousemove", MOUSEENTER:"mouseenter", MOUSELEAVE:"mouseleave", SELECTSTART:"selectstart", KEYPRESS:"keypress", KEYDOWN:"keydown", KEYUP:"keyup", BLUR:"blur", FOCUS:"focus", DEACTIVATE:"deactivate", FOCUSIN:goog.userAgent.IE ? "focusin" : "DOMFocusIn", FOCUSOUT:goog.userAgent.IE ? "focusout" : "DOMFocusOut", CHANGE:"change",
+SELECT:"select", SUBMIT:"submit", INPUT:"input", PROPERTYCHANGE:"propertychange", DRAGSTART:"dragstart", DRAG:"drag", DRAGENTER:"dragenter", DRAGOVER:"dragover", DRAGLEAVE:"dragleave", DROP:"drop", DRAGEND:"dragend", TOUCHSTART:"touchstart", TOUCHMOVE:"touchmove", TOUCHEND:"touchend", TOUCHCANCEL:"touchcancel", BEFOREUNLOAD:"beforeunload", CONSOLEMESSAGE:"consolemessage", CONTEXTMENU:"contextmenu", DOMCONTENTLOADED:"DOMContentLoaded", ERROR:"error", HELP:"help", LOAD:"load", LOSECAPTURE:"losecapture",
+ORIENTATIONCHANGE:"orientationchange", READYSTATECHANGE:"readystatechange", RESIZE:"resize", SCROLL:"scroll", UNLOAD:"unload", HASHCHANGE:"hashchange", PAGEHIDE:"pagehide", PAGESHOW:"pageshow", POPSTATE:"popstate", COPY:"copy", PASTE:"paste", CUT:"cut", BEFORECOPY:"beforecopy", BEFORECUT:"beforecut", BEFOREPASTE:"beforepaste", ONLINE:"online", OFFLINE:"offline", MESSAGE:"message", CONNECT:"connect", ANIMATIONSTART:goog.events.getVendorPrefixedName_("AnimationStart"), ANIMATIONEND:goog.events.getVendorPrefixedName_("AnimationEnd"),
+ANIMATIONITERATION:goog.events.getVendorPrefixedName_("AnimationIteration"), TRANSITIONEND:goog.events.getVendorPrefixedName_("TransitionEnd"), POINTERDOWN:"pointerdown", POINTERUP:"pointerup", POINTERCANCEL:"pointercancel", POINTERMOVE:"pointermove", POINTEROVER:"pointerover", POINTEROUT:"pointerout", POINTERENTER:"pointerenter", POINTERLEAVE:"pointerleave", GOTPOINTERCAPTURE:"gotpointercapture", LOSTPOINTERCAPTURE:"lostpointercapture", MSGESTURECHANGE:"MSGestureChange", MSGESTUREEND:"MSGestureEnd",
+MSGESTUREHOLD:"MSGestureHold", MSGESTURESTART:"MSGestureStart", MSGESTURETAP:"MSGestureTap", MSGOTPOINTERCAPTURE:"MSGotPointerCapture", MSINERTIASTART:"MSInertiaStart", MSLOSTPOINTERCAPTURE:"MSLostPointerCapture", MSPOINTERCANCEL:"MSPointerCancel", MSPOINTERDOWN:"MSPointerDown", MSPOINTERENTER:"MSPointerEnter", MSPOINTERHOVER:"MSPointerHover", MSPOINTERLEAVE:"MSPointerLeave", MSPOINTERMOVE:"MSPointerMove", MSPOINTEROUT:"MSPointerOut", MSPOINTEROVER:"MSPointerOver", MSPOINTERUP:"MSPointerUp", TEXTINPUT:"textinput",
+COMPOSITIONSTART:"compositionstart", COMPOSITIONUPDATE:"compositionupdate", COMPOSITIONEND:"compositionend", EXIT:"exit", LOADABORT:"loadabort", LOADCOMMIT:"loadcommit", LOADREDIRECT:"loadredirect", LOADSTART:"loadstart", LOADSTOP:"loadstop", RESPONSIVE:"responsive", SIZECHANGED:"sizechanged", UNRESPONSIVE:"unresponsive", VISIBILITYCHANGE:"visibilitychange", STORAGE:"storage", DOMSUBTREEMODIFIED:"DOMSubtreeModified", DOMNODEINSERTED:"DOMNodeInserted", DOMNODEREMOVED:"DOMNodeRemoved", DOMNODEREMOVEDFROMDOCUMENT:"DOMNodeRemovedFromDocument",
 DOMNODEINSERTEDINTODOCUMENT:"DOMNodeInsertedIntoDocument", DOMATTRMODIFIED:"DOMAttrModified", DOMCHARACTERDATAMODIFIED:"DOMCharacterDataModified"};
 goog.provide("goog.reflect");
 goog.reflect.object = function(type, object) {
@@ -32141,9 +32141,9 @@ goog.debug.entryPointRegistry.register(function(transformer) {
   goog.events.handleBrowserEvent_ = transformer(goog.events.handleBrowserEvent_);
 });
 goog.provide("goog.dom.TagName");
-goog.dom.TagName = {A:"A", ABBR:"ABBR", ACRONYM:"ACRONYM", ADDRESS:"ADDRESS", APPLET:"APPLET", AREA:"AREA", ARTICLE:"ARTICLE", ASIDE:"ASIDE", AUDIO:"AUDIO", B:"B", BASE:"BASE", BASEFONT:"BASEFONT", BDI:"BDI", BDO:"BDO", BIG:"BIG", BLOCKQUOTE:"BLOCKQUOTE", BODY:"BODY", BR:"BR", BUTTON:"BUTTON", CANVAS:"CANVAS", CAPTION:"CAPTION", CENTER:"CENTER", CITE:"CITE", CODE:"CODE", COL:"COL", COLGROUP:"COLGROUP", COMMAND:"COMMAND", DATA:"DATA", DATALIST:"DATALIST", DD:"DD", DEL:"DEL", DETAILS:"DETAILS", DFN:"DFN", 
-DIALOG:"DIALOG", DIR:"DIR", DIV:"DIV", DL:"DL", DT:"DT", EM:"EM", EMBED:"EMBED", FIELDSET:"FIELDSET", FIGCAPTION:"FIGCAPTION", FIGURE:"FIGURE", FONT:"FONT", FOOTER:"FOOTER", FORM:"FORM", FRAME:"FRAME", FRAMESET:"FRAMESET", H1:"H1", H2:"H2", H3:"H3", H4:"H4", H5:"H5", H6:"H6", HEAD:"HEAD", HEADER:"HEADER", HGROUP:"HGROUP", HR:"HR", HTML:"HTML", I:"I", IFRAME:"IFRAME", IMG:"IMG", INPUT:"INPUT", INS:"INS", ISINDEX:"ISINDEX", KBD:"KBD", KEYGEN:"KEYGEN", LABEL:"LABEL", LEGEND:"LEGEND", LI:"LI", LINK:"LINK", 
-MAP:"MAP", MARK:"MARK", MATH:"MATH", MENU:"MENU", META:"META", METER:"METER", NAV:"NAV", NOFRAMES:"NOFRAMES", NOSCRIPT:"NOSCRIPT", OBJECT:"OBJECT", OL:"OL", OPTGROUP:"OPTGROUP", OPTION:"OPTION", OUTPUT:"OUTPUT", P:"P", PARAM:"PARAM", PRE:"PRE", PROGRESS:"PROGRESS", Q:"Q", RP:"RP", RT:"RT", RUBY:"RUBY", S:"S", SAMP:"SAMP", SCRIPT:"SCRIPT", SECTION:"SECTION", SELECT:"SELECT", SMALL:"SMALL", SOURCE:"SOURCE", SPAN:"SPAN", STRIKE:"STRIKE", STRONG:"STRONG", STYLE:"STYLE", SUB:"SUB", SUMMARY:"SUMMARY", 
+goog.dom.TagName = {A:"A", ABBR:"ABBR", ACRONYM:"ACRONYM", ADDRESS:"ADDRESS", APPLET:"APPLET", AREA:"AREA", ARTICLE:"ARTICLE", ASIDE:"ASIDE", AUDIO:"AUDIO", B:"B", BASE:"BASE", BASEFONT:"BASEFONT", BDI:"BDI", BDO:"BDO", BIG:"BIG", BLOCKQUOTE:"BLOCKQUOTE", BODY:"BODY", BR:"BR", BUTTON:"BUTTON", CANVAS:"CANVAS", CAPTION:"CAPTION", CENTER:"CENTER", CITE:"CITE", CODE:"CODE", COL:"COL", COLGROUP:"COLGROUP", COMMAND:"COMMAND", DATA:"DATA", DATALIST:"DATALIST", DD:"DD", DEL:"DEL", DETAILS:"DETAILS", DFN:"DFN",
+DIALOG:"DIALOG", DIR:"DIR", DIV:"DIV", DL:"DL", DT:"DT", EM:"EM", EMBED:"EMBED", FIELDSET:"FIELDSET", FIGCAPTION:"FIGCAPTION", FIGURE:"FIGURE", FONT:"FONT", FOOTER:"FOOTER", FORM:"FORM", FRAME:"FRAME", FRAMESET:"FRAMESET", H1:"H1", H2:"H2", H3:"H3", H4:"H4", H5:"H5", H6:"H6", HEAD:"HEAD", HEADER:"HEADER", HGROUP:"HGROUP", HR:"HR", HTML:"HTML", I:"I", IFRAME:"IFRAME", IMG:"IMG", INPUT:"INPUT", INS:"INS", ISINDEX:"ISINDEX", KBD:"KBD", KEYGEN:"KEYGEN", LABEL:"LABEL", LEGEND:"LEGEND", LI:"LI", LINK:"LINK",
+MAP:"MAP", MARK:"MARK", MATH:"MATH", MENU:"MENU", META:"META", METER:"METER", NAV:"NAV", NOFRAMES:"NOFRAMES", NOSCRIPT:"NOSCRIPT", OBJECT:"OBJECT", OL:"OL", OPTGROUP:"OPTGROUP", OPTION:"OPTION", OUTPUT:"OUTPUT", P:"P", PARAM:"PARAM", PRE:"PRE", PROGRESS:"PROGRESS", Q:"Q", RP:"RP", RT:"RT", RUBY:"RUBY", S:"S", SAMP:"SAMP", SCRIPT:"SCRIPT", SECTION:"SECTION", SELECT:"SELECT", SMALL:"SMALL", SOURCE:"SOURCE", SPAN:"SPAN", STRIKE:"STRIKE", STRONG:"STRONG", STYLE:"STYLE", SUB:"SUB", SUMMARY:"SUMMARY",
 SUP:"SUP", SVG:"SVG", TABLE:"TABLE", TBODY:"TBODY", TD:"TD", TEXTAREA:"TEXTAREA", TFOOT:"TFOOT", TH:"TH", THEAD:"THEAD", TIME:"TIME", TITLE:"TITLE", TR:"TR", TRACK:"TRACK", TT:"TT", U:"U", UL:"UL", VAR:"VAR", VIDEO:"VIDEO", WBR:"WBR"};
 goog.provide("goog.functions");
 goog.functions.constant = function(retValue) {
@@ -33439,7 +33439,7 @@ visibility_2d.vektor.Point.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity
       return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, cljs.core.pr_writer, "", " ", "", opts__4885__auto__, keyval__4887__auto__);
     };
   }(this__4883__auto____$1);
-  return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, pr_pair__4886__auto__, "#visibility-2d.vektor.Point{", ", ", "}", opts__4885__auto__, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "x", "x", 2099068185), self__.x], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, pr_pair__4886__auto__, "#visibility-2d.vektor.Point{", ", ", "}", opts__4885__auto__, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "x", "x", 2099068185), self__.x], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE,
   [new cljs.core.Keyword(null, "y", "y", -1757859776), self__.y], null)], null), self__.__extmap));
 };
 visibility_2d.vektor.Point.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__4867__auto__) {
@@ -34133,7 +34133,7 @@ visibility_2d.ray.Ray.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = 
       return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, cljs.core.pr_writer, "", " ", "", opts__4885__auto__, keyval__4887__auto__);
     };
   }(this__4883__auto____$1);
-  return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, pr_pair__4886__auto__, "#visibility-2d.ray.Ray{", ", ", "}", opts__4885__auto__, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "origin", "origin", 1037372088), self__.origin], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  return cljs.core.pr_sequential_writer.call(null, writer__4884__auto__, pr_pair__4886__auto__, "#visibility-2d.ray.Ray{", ", ", "}", opts__4885__auto__, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "origin", "origin", 1037372088), self__.origin], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE,
   [new cljs.core.Keyword(null, "direction", "direction", -633359395), self__.direction], null)], null), self__.__extmap));
 };
 visibility_2d.ray.Ray.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__4867__auto__) {
@@ -34400,7 +34400,7 @@ goog.require("goog.events");
 goog.require("goog.string.format");
 goog.require("visibility_2d.vektor");
 visibility_2d.core.draw_scene_BANG_ = function visibility_2d$core$draw_scene_BANG_(ctx, w, h, polygons) {
-  return visibility_2d.dali.fill_style_BANG_.call(null, visibility_2d.dali.stroke_paths_BANG_.call(null, visibility_2d.dali.stroke_style_BANG_.call(null, visibility_2d.dali.fill_rect_BANG_.call(null, visibility_2d.dali.fill_style_BANG_.call(null, ctx, "#333"), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "x", "x", 2099068185), 0, new cljs.core.Keyword(null, "y", "y", -1757859776), 0, new cljs.core.Keyword(null, "w", "w", 354169001), w, new cljs.core.Keyword(null, "h", "h", 
+  return visibility_2d.dali.fill_style_BANG_.call(null, visibility_2d.dali.stroke_paths_BANG_.call(null, visibility_2d.dali.stroke_style_BANG_.call(null, visibility_2d.dali.fill_rect_BANG_.call(null, visibility_2d.dali.fill_style_BANG_.call(null, ctx, "#333"), new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "x", "x", 2099068185), 0, new cljs.core.Keyword(null, "y", "y", -1757859776), 0, new cljs.core.Keyword(null, "w", "w", 354169001), w, new cljs.core.Keyword(null, "h", "h",
   1109658740), h], null)), "#fff"), polygons), "#ddd");
 };
 visibility_2d.core.intersection = function visibility_2d$core$intersection(ray, line) {
@@ -34838,11 +34838,11 @@ visibility_2d.core.polygons = function() {
       }
     }, null, null);
   };
-  return iter__5028__auto__.call(null, new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), -1, new cljs.core.Keyword(null, "y", "y", -1757859776), -1], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 500, new cljs.core.Keyword(null, "y", "y", 
-  -1757859776), -1], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 500, new cljs.core.Keyword(null, "y", "y", -1757859776), 312], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), -1, new cljs.core.Keyword(null, "y", "y", -1757859776), 312], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, 
-  "x", "x", 2099068185), 80, new cljs.core.Keyword(null, "y", "y", -1757859776), 100], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 160, new cljs.core.Keyword(null, "y", "y", -1757859776), 120], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 160, new cljs.core.Keyword(null, "y", "y", -1757859776), 180], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 
-  2099068185), 110, new cljs.core.Keyword(null, "y", "y", -1757859776), 200], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 350, new cljs.core.Keyword(null, "y", "y", -1757859776), 250], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 300, new cljs.core.Keyword(null, "y", "y", -1757859776), 200], null), 
-  new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 400, new cljs.core.Keyword(null, "y", "y", -1757859776), 100], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 400, new cljs.core.Keyword(null, "y", "y", -1757859776), 170], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 
+  return iter__5028__auto__.call(null, new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), -1, new cljs.core.Keyword(null, "y", "y", -1757859776), -1], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 500, new cljs.core.Keyword(null, "y", "y",
+  -1757859776), -1], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 500, new cljs.core.Keyword(null, "y", "y", -1757859776), 312], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), -1, new cljs.core.Keyword(null, "y", "y", -1757859776), 312], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,
+  "x", "x", 2099068185), 80, new cljs.core.Keyword(null, "y", "y", -1757859776), 100], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 160, new cljs.core.Keyword(null, "y", "y", -1757859776), 120], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 160, new cljs.core.Keyword(null, "y", "y", -1757859776), 180], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x",
+  2099068185), 110, new cljs.core.Keyword(null, "y", "y", -1757859776), 200], null)], null), new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 350, new cljs.core.Keyword(null, "y", "y", -1757859776), 250], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 300, new cljs.core.Keyword(null, "y", "y", -1757859776), 200], null),
+  new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 400, new cljs.core.Keyword(null, "y", "y", -1757859776), 100], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 400, new cljs.core.Keyword(null, "y", "y", -1757859776), 170], null)], null), new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x",
   2099068185), 400, new cljs.core.Keyword(null, "y", "y", -1757859776), 20], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 380, new cljs.core.Keyword(null, "y", "y", -1757859776), 40], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 2099068185), 440, new cljs.core.Keyword(null, "y", "y", -1757859776), 60], null)], null)], null));
 }();
 visibility_2d.core.canvas = goog.dom.getElement("c");
