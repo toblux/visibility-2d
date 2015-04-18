@@ -24,20 +24,15 @@ figcaption, figure {
 .box {
   position: absolute; left: 0; top: 0; right: 0; bottom: 0;
 
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: vertical;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  display: -moz-box;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  -moz-box-orient: vertical;
-
-  display: box;
-  box-pack: center;
-  box-align: center;
-  box-orient: vertical;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
 }
 
 #c {
