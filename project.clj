@@ -7,7 +7,7 @@
 
   :plugins [[lein-cljsbuild "1.0.5"]]
 
-  :clean-targets ["target"]
+  :clean-targets ^{:protect false} ["target" "resources/public/js"]
 
   :hooks [leiningen.cljsbuild]
 
