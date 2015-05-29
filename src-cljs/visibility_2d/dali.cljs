@@ -15,6 +15,8 @@
     (set! (.-height canvas) (* h scale-factor))
     (set! (.-width (.-style canvas)) (str w "px"))
     (set! (.-height (.-style canvas)) (str h "px"))
+    (set! (.-minWidth (.-style canvas)) (str w "px"))
+    (set! (.-minHeight (.-style canvas)) (str h "px"))
     (.scale ctx scale-factor scale-factor)
     ctx))
 
