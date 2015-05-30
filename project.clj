@@ -3,7 +3,7 @@
   :url "https://toblux.github.io/visibility-2d/"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-3211"]]
+                 [org.clojure/clojurescript "0.0-3297"]]
 
   :plugins [[lein-cljsbuild "1.0.6"]]
 
