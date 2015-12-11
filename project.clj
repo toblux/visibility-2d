@@ -2,10 +2,10 @@
   :description "2D Visibility"
   :url "https://toblux.github.io/visibility-2d/"
 
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/clojurescript "0.0-3297"]]
+  :dependencies [[org.clojure/clojure "1.7.0"]
+                 [org.clojure/clojurescript "1.7.170"]]
 
-  :plugins [[lein-cljsbuild "1.0.6"]]
+  :plugins [[lein-cljsbuild "1.1.1"]]
 
   :clean-targets ^{:protect false} ["target" "resources/public/js"]
 
