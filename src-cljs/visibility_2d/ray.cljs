@@ -6,8 +6,6 @@
 (defn ray? [ray]
   (instance? Ray ray))
 
-;;; A ray consists of an origin and a direction vector as follows
-
 (defn ray
   "Creates a ray from vector u to vector v, optionally rotated by theta"
   ([u v] (ray u v 0))
