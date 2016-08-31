@@ -11,9 +11,7 @@ fi
 cd hosted
 
 git checkout gh-pages
-
 git pull
-
 git rm -rf .
 
 lein cljsbuild once release
@@ -27,7 +25,5 @@ cp ../resources/public/js/visibility-2d.min.js js/visibility-2d.min.js
 cp ../resources/public/css/main.css css/main.css
 
 git add .
-
 git commit -m "Publish"
-
 git push origin gh-pages
