@@ -11,6 +11,7 @@ fi
 cd hosted
 
 git checkout gh-pages
+git reset --hard
 git pull
 git rm -rf .
 
