@@ -1,6 +1,8 @@
 (ns visibility-2d.core
   (:require [goog.dom :as dom]
+            [goog.dom.ViewportSizeMonitor :as ViewportSizeMonitor]
             [goog.events :as events]
+            [goog.events.EventType :as EventType]
             [goog.string :as string]
             [goog.string.format]
             [visibility-2d.ray :as ray]
@@ -8,13 +10,33 @@
             [visibility-2d.vektor :as vektor]
             [visibility-2d.statistics :as statistics]))
 
-(defn draw-scene! [ctx w h polygons]
-  (-> ctx
-      (dali/fill-style! "#333")
-      (dali/fill-rect! {:x 0 :y 0 :w w :h h})
-      (dali/stroke-style! "#fff")
-      (dali/stroke-paths! polygons)
-      (dali/fill-style! "#ddd")))
+;;; Global state
+
+(defonce canvas (dom/getElement "c"))
+(defonce polygons (atom))
+
+(defn reset-polygons! [w h]
+  (let [outline [{:x (dec 0) :y (dec 0)}
+                 {:x (inc w) :y (dec 0)}
+                 {:x (inc w) :y (inc h)}
+                 {:x (dec 0) :y (inc h)}]]
+    (reset! polygons
+            (for [points [outline
+                          [{:x  80 :y 100}
+                           {:x 160 :y 120}
+                           {:x 160 :y 180}
+                           {:x 110 :y 200}]
+                          [{:x 350 :y 250}
+                           {:x 300 :y 200}
+                           {:x 400 :y 100}
+                           {:x 400 :y 170}]
+                          [{:x 400 :y  20}
+                           {:x 380 :y  40}
+                           {:x 440 :y  60}]]]
+              (vec (for [{:keys [x y]} points]
+                     (vektor/point x y)))))))
+
+;;; Visibility
 
 (defn intersection [ray line]
   ;; ray = p + t * r
@@ -29,15 +51,15 @@
      :u (if (= 0 rxs) 0 (/ (vektor/det2d q-p r) rxs))}))
 
 (defn sort-rays [rays]
-  "Sort rays based on their angles"
+  "Sorts rays based on their angles."
   (sort (comparator #(< (ray/angle2d %1) (ray/angle2d %2))) rays))
 
 (defn all-lines [polygons]
-  "Returns a list of lines (start and end points) that make up a polygon"
+  "Returns a list of lines (start and end points) that make up a polygon."
   (mapcat #(map list % (vektor/shift-vector %)) polygons))
 
 (defn intersections [ray lines]
-  "Returns a list of all intersections between ray and lines"
+  "Returns a list of all intersections between ray and lines."
   (for [line lines
         :let [inter (intersection ray line)
               {:keys [t u]} inter]
@@ -45,8 +67,9 @@
     inter))
 
 (defn all-rays [origin lines]
-  (for [line lines, point line, angle [0 -0.00175 0.00175]]
-    (ray/ray origin point angle)))
+  (let [epsilon 0.00175]
+    (for [line lines, point line, angle [0 (- epsilon) epsilon]]
+      (ray/ray origin point angle))))
 
 (defn visible-path [sorted-rays lines]
   (for [ray sorted-rays]
@@ -60,6 +83,8 @@
         sorted-rays (sort-rays all-rays)]
     (visible-path sorted-rays lines)))
 
+;;; Benchmarking
+
 (defn benchmark! [f]
   (let [html-element (dom/getElement "stats")
         number-of-samples 51
@@ -69,51 +94,64 @@
             result (f event)
             dt (- (.now js/Date) before)
             values (swap! samples #(take number-of-samples (cons dt %)))]
-        (dom/setTextContent html-element
-                            (str
-                              (string/format "samples: %02d\n" (count values))
-                              (string/format "mean: %.2f ms\n" (statistics/mean values))
-                              (string/format "median: %.2f ms" (statistics/median values))))
+        (set! (.-hidden html-element) js/false)
+        (dom/setTextContent
+          html-element
+          (str
+            (string/format "samples: %02d\n" (count values))
+            (string/format "mean: %.2f ms\n" (statistics/mean values))
+            (string/format "median: %.2f ms" (statistics/median values))))
         result))))
 
-(defn process-event! [event polygons]
+;;; Drawing
+
+(defn resize-canvas! [canvas]
+  "Resizes the canvas to its parent's size and returns the context."
+  (let [parent (.-parentElement canvas)
+        width  (.-clientWidth parent)
+        height (.-clientHeight parent)]
+    (reset-polygons! width height)
+    (dali/setup-canvas! canvas width height)))
+
+(defn draw-scene! [ctx polygons]
+  "Draws the polygons into the canvas' context."
+  (let [canvas (.-canvas ctx)
+        w (.-width canvas)
+        h (.-height canvas)]
+    (-> ctx
+        (dali/fill-style! "#222")
+        (dali/fill-rect! {:x 0 :y 0 :w w :h h})
+        (dali/stroke-style! "white")
+        (dali/stroke-paths! polygons)
+        (dali/fill-style! "#ddd"))))
+
+;;; Event Handling
+
+(defn handle-mousemove! [event]
   (let [canvas (.-currentTarget event)
-        context (dali/context-2d canvas)
+        ctx (dali/context-2d canvas)
         rect (.getBoundingClientRect canvas)
         x (- (.-clientX event) (.-left rect))
         y (- (.-clientY event) (.-top rect))
-        visible-path (visibility (vektor/point x y) polygons)]
-    (-> context
-        (draw-scene! (.-width canvas) (.-height canvas) polygons)
+        visible-path (visibility (vektor/point x y) @polygons)]
+    (-> ctx
+        (draw-scene! @polygons)
         (dali/fill-path! visible-path)
-        (dali/fill-style! "#f00")
+        (dali/fill-style! "yellow")
         (dali/fill-circle! x y 4))))
 
-(def width 500)
-(def height 312)
-(def polygons
-  (for [points [[{:x -1  :y -1}
-                 {:x 500 :y -1}
-                 {:x 500 :y 312}
-                 {:x -1  :y 312}]
-                [{:x 80  :y 100}
-                 {:x 160 :y 120}
-                 {:x 160 :y 180}
-                 {:x 110 :y 200}]
-                [{:x 350 :y 250}
-                 {:x 300 :y 200}
-                 {:x 400 :y 100}
-                 {:x 400 :y 170}]
-                [{:x 400 :y 20}
-                 {:x 380 :y 40}
-                 {:x 440 :y 60}]]]
-    (vec (for [{:keys [x y]} points]
-           (vektor/point x y)))))
+(defn handle-mouseout! [event]
+  (let [canvas (.-currentTarget event)
+        ctx (dali/context-2d canvas)]
+    (draw-scene! ctx @polygons)))
 
-(def canvas (dom/getElement "c"))
-(def ctx (dali/setup-canvas! canvas width height))
+(defn handle-resize! [event]
+  (draw-scene! (resize-canvas! canvas) @polygons))
 
-(events/listen canvas "mousemove" (benchmark! #(process-event! % polygons)))
-(events/listen canvas "mouseout" #(draw-scene! ctx width height polygons))
+; Set up event listeners
+(events/listen (dom/ViewportSizeMonitor.) EventType/RESIZE handle-resize!)
+(events/listen canvas EventType/MOUSEMOVE (benchmark! handle-mousemove!))
+(events/listen canvas EventType/MOUSEOUT handle-mouseout!)
 
-(draw-scene! ctx width height polygons)
+; Initial drawing
+(draw-scene! (resize-canvas! canvas) @polygons)
