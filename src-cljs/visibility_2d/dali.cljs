@@ -2,12 +2,16 @@
   (:require [goog.dom :as dom]))
 
 (defn- rect? [{:keys [x y w h]}]
+  "Private function that checks for a rect."
   (and (number? x) (number? y) (number? w) (number? h)))
 
 (defn context-2d [canvas]
+  "Returns the 2D context from a canvas element."
   (.getContext canvas "2d"))
 
-(defn setup-canvas! [canvas w h]
+(defn setup-canvas!
+  "Sets up a canvas element by scaling it and its context to the right size."
+  [canvas w h]
   {:pre [(number? w) (number? h)]}
   (let [ctx (context-2d canvas)
         scale-factor (dom/getPixelRatio)]
@@ -21,14 +25,17 @@
     ctx))
 
 (defn fill-style! [ctx color]
+  "Sets the fill style of a context to the specified color."
   (set! (.-fillStyle ctx) color)
   ctx)
 
 (defn stroke-style! [ctx color]
+  "Sets the stroke style of a context to the specified color."
   (set! (.-strokeStyle ctx) color)
   ctx)
 
 (defn fill-rect! [ctx rect]
+  "Color fills a rect in the given context by the currently set fill color (see `fill-style!`)."
   {:pre  [(rect? rect)]
    :post [(= ctx %)]}
   (let [{:keys [x y w h]} rect]
