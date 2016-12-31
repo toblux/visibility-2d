@@ -34,8 +34,9 @@
   (set! (.-strokeStyle ctx) color)
   ctx)
 
-(defn fill-rect! [ctx rect]
+(defn fill-rect!
   "Color fills a rect in the given context by the currently set fill color (see `fill-style!`)."
+  [ctx rect]
   {:pre  [(rect? rect)]
    :post [(= ctx %)]}
   (let [{:keys [x y w h]} rect]
