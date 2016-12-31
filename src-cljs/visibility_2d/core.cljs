@@ -149,13 +149,19 @@
 (defn handle-resize! [event]
   (draw-scene! (resize-canvas! canvas) @polygons))
 
+(defn handle-event! [event]
+  (case (.-type event)
+    ("mousemove" "touchstart" "touchmove") (handle-mousemove! event)
+    ("mouseout" "touchend") (handle-mouseout! event)
+    ("resize") (handle-resize! event)))
+
 ; Set up event listeners
-(events/listen (dom/ViewportSizeMonitor.) EventType/RESIZE handle-resize!)
-(events/listen canvas EventType/MOUSEMOVE (benchmark! handle-mousemove!))
-(events/listen canvas EventType/MOUSEOUT handle-mouseout!)
-(events/listen canvas EventType/TOUCHSTART handle-mousemove!)
-(events/listen canvas EventType/TOUCHMOVE handle-mousemove!)
-(events/listen canvas EventType/TOUCHEND handle-mouseout!)
+(events/listen (dom/ViewportSizeMonitor.) EventType/RESIZE handle-event!)
+(events/listen canvas EventType/MOUSEOUT handle-event!)
+(events/listen canvas EventType/MOUSEMOVE handle-event!)
+(events/listen canvas EventType/TOUCHSTART handle-event!)
+(events/listen canvas EventType/TOUCHMOVE handle-event!)
+(events/listen canvas EventType/TOUCHEND handle-event!)
 
 ; Initial drawing
 (draw-scene! (resize-canvas! canvas) @polygons)
