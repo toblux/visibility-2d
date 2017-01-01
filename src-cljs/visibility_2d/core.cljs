@@ -127,20 +127,21 @@
 
 ;;; Event Handling
 
-(defn handle-mousemove! [event]
+(defn handle-move! [event]
   (let [canvas (.-currentTarget event)
         ctx (dali/context-2d canvas)
         rect (.getBoundingClientRect canvas)
         x (- (.-clientX event) (.-left rect))
         y (- (.-clientY event) (.-top rect))
         visible-path (visibility (vektor/point x y) @polygons)]
+    (.preventDefault event)
     (-> ctx
         (draw-scene! @polygons)
         (dali/fill-path! visible-path)
         (dali/fill-style! "yellow")
         (dali/fill-circle! x y 4))))
 
-(defn handle-mouseout! [event]
+(defn handle-up! [event]
   (let [canvas (.-currentTarget event)
         ctx (dali/context-2d canvas)]
     (.preventDefault event)
@@ -151,8 +152,8 @@
 
 (defn handle-event! [event]
   (case (.-type event)
-    ("mousemove" "touchstart" "touchmove") (handle-mousemove! event)
-    ("mouseout" "touchend") (handle-mouseout! event)
+    ("mousemove" "touchstart" "touchmove") (handle-move! event)
+    ("mouseout" "touchend") (handle-up! event)
     ("resize") (handle-resize! event)))
 
 ; Set up event listeners
