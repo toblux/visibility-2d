@@ -21,6 +21,7 @@ pre {
 
 canvas {
   vertical-align: middle;
+  touch-action: none;
 }
 
 .link {
