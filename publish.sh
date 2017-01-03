@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-set -e # set errexit
+# Set errexit to stop immediately when any command returns non-zero.
+set -e
 
+# Change to the directory this script file is in.
 cd `dirname $0`
 
 if [ ! -d hosted ]; then
