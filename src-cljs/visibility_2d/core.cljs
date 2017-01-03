@@ -61,14 +61,16 @@
 (defn intersections [ray lines]
   "Returns a list of all intersections between ray and lines."
   (for [line lines
-        :let [inter (intersection ray line)
-              {:keys [t u]} inter]
+        :let [ray-line-intersection (intersection ray line)
+              {:keys [t u]} ray-line-intersection]
         :when (and (> t 0) (> u 0) (<= u 1))]
-    inter))
+    ray-line-intersection))
 
 (defn all-rays [origin lines]
-  (let [epsilon 0.00175]
-    (for [line lines, point line, angle [0 (- epsilon) epsilon]]
+  (let [epsilon 0.00175] ; How did I come up with this value again?
+    (for [line lines
+          point line
+          angle [0 (- epsilon) epsilon]]
       (ray/ray origin point angle))))
 
 (defn visible-path [sorted-rays lines]
