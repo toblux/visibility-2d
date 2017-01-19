@@ -17,5 +17,5 @@
         index (Math/floor (/ number-of-values 2))
         midpoint (nth sorted-values index)]
     (if (even? number-of-values)
-      (/ (+ midpoint (nth sorted-values (dec index))) 2)
+      (mean [midpoint (nth sorted-values (dec index))])
       midpoint)))
