@@ -9,8 +9,7 @@ pom.xml.asc
 /.nrepl-port
 *.map
 *.swp
-.lein-repl-history
-/hosted
 
 figwheel_server.log
 resources/public/js/
+hosted/

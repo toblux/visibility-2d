@@ -2,9 +2,9 @@
   :description "2D Visibility"
   :url "https://toblux.github.io/visibility-2d/"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.293"]]
+                 [org.clojure/clojurescript "1.9.494"]]
   :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel "0.5.8"]]
+            [lein-figwheel "0.5.9"]]
   :clean-targets ^{:protect false} ["target" "resources/public/js"]
   :hooks [leiningen.cljsbuild]
   :cljsbuild {:builds [{:id "debug"
