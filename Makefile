@@ -10,4 +10,9 @@ figwheel:
 clean:
 	lein clean
 
-.PHONY: debug release figwheel clean
+demo: release
+	cp resources/public/index.html docs/index.html
+	cp resources/public/js/visibility-2d.min.js docs/js/visibility-2d.min.js
+	cp resources/public/css/main.css docs/css/main.css
+
+.PHONY: debug release figwheel clean demo
