@@ -1,6 +1,6 @@
 # 2D Visibility
 
-Interactive 2D visibility/shadow effect using ClojureScript.
+Interactive 2D visibility/shadow effect using ClojureScript. [Click here](https://toblux.github.io/visibility-2d/) for a demo.
 
 ## Contributors
 

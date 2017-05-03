@@ -1,10 +1,8 @@
 (defproject visibility-2d "0.1.0"
-  :description "2D Visibility"
-  :url "https://toblux.github.io/visibility-2d/"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.494"]]
-  :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel "0.5.9"]]
+                 [org.clojure/clojurescript "1.9.521"]]
+  :plugins [[lein-cljsbuild "1.1.6"]
+            [lein-figwheel "0.5.10"]]
   :clean-targets ^{:protect false} ["target"
                                     "resources/public/js"
                                     ".lein-repl-history"
