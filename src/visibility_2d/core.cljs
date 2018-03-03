@@ -13,7 +13,7 @@
 ;;; Global state
 
 (defonce canvas (dom/getElement "c"))
-(defonce polygons (atom))
+(defonce polygons (atom ()))
 
 (defn reset-polygons! [w h]
   (let [outline [{:x (dec 0) :y (dec 0)}

@@ -1,8 +1,8 @@
 (defproject visibility-2d "0.1.0"
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.521"]]
-  :plugins [[lein-cljsbuild "1.1.6"]
-            [lein-figwheel "0.5.10"]]
+  :dependencies [[org.clojure/clojure "1.9.0"]
+                 [org.clojure/clojurescript "1.10.64"]]
+  :plugins [[lein-cljsbuild "1.1.7"]
+            [lein-figwheel "0.5.15"]]
   :clean-targets ^{:protect false} ["target"
                                     "resources/public/js"
                                     ".lein-repl-history"
