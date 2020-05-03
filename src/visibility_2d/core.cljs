@@ -1,6 +1,5 @@
 (ns visibility-2d.core
   (:require [goog.dom :as dom]
-            [goog.dom.ViewportSizeMonitor :as ViewportSizeMonitor]
             [goog.events :as events]
             [goog.events.EventType :as EventType]
             [goog.string :as string]
@@ -8,7 +7,8 @@
             [visibility-2d.ray :as ray]
             [visibility-2d.dali :as dali]
             [visibility-2d.vektor :as vektor]
-            [visibility-2d.statistics :as statistics]))
+            [visibility-2d.statistics :as statistics])
+  (:import (goog.dom ViewportSizeMonitor)))
 
 ;;; Global state
 
@@ -67,7 +67,7 @@
     ray-line-intersection))
 
 (defn all-rays [origin lines]
-  (let [epsilon 0.00175] ; How did I come up with this value again?
+  (let [epsilon 0.00175]
     (for [line lines
           point line
           angle [0 (- epsilon) epsilon]]
@@ -89,12 +89,12 @@
 
 (defn benchmark! [f]
   (let [html-element (dom/getElement "stats")
-        number-of-samples 51
+        number-of-samples 60
         samples (atom ())]
     (fn [event]
-      (let [before (.now js/Date)
+      (let [before (.now js/performance)
             result (f event)
-            dt (- (.now js/Date) before)
+            dt (- (.now js/performance) before)
             values (swap! samples #(take number-of-samples (cons dt %)))]
         (set! (.-hidden html-element) js/false)
         (dom/setTextContent
@@ -149,22 +149,28 @@
     (.preventDefault event)
     (draw-scene! ctx @polygons)))
 
-(defn handle-resize! [event]
-  (draw-scene! (resize-canvas! canvas) @polygons))
+(defn handle-resize! [_]
+  (draw-scene!
+    (resize-canvas! canvas)
+    @polygons))
 
-(defn handle-event! [event]
-  (case (.-type event)
-    ("mousemove" "touchstart" "touchmove") (handle-move! event)
-    ("mouseout" "touchend") (handle-up! event)
-    ("resize") (handle-resize! event)))
+(def handle-event!
+  (benchmark!
+    (fn [event]
+      (case (.-type event)
+        ("mousemove" "touchstart" "touchmove") (handle-move! event)
+        ("mouseout" "touchend") (handle-up! event)
+        ("resize") (handle-resize! event)))))
 
-; Set up event listeners
-(events/listen (dom/ViewportSizeMonitor.) EventType/RESIZE handle-event!)
+;; Set up event listeners
+(events/listen (ViewportSizeMonitor.) EventType/RESIZE handle-event!)
 (events/listen canvas EventType/MOUSEOUT handle-event!)
 (events/listen canvas EventType/MOUSEMOVE handle-event!)
 (events/listen canvas EventType/TOUCHSTART handle-event!)
 (events/listen canvas EventType/TOUCHMOVE handle-event!)
 (events/listen canvas EventType/TOUCHEND handle-event!)
 
-; Initial drawing
-(draw-scene! (resize-canvas! canvas) @polygons)
+;; Initial drawing
+(draw-scene!
+  (resize-canvas! canvas)
+  @polygons)

@@ -10,5 +10,9 @@ pom.xml.asc
 *.map
 *.swp
 
+# Figwheel
+.rebel_readline_history
 figwheel_server.log
+
+# Build artifacts
 resources/public/js/
